@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+
+}
+
+main {
+    width: 90%;
+    margin: 12% auto;
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.money {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.money h3 {
+    font-weight: 400;
+    color: hsl(27, 66%, 92%);
+}
+
+.money p {
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(33, 100%, 98%);
+}
+
+.logo {
+    align-self: center;
+    margin-left: 5%;
+}
+
+.info {
+    margin-top: 5%;
+}
+
+.chart {
+    background-color: hsl(33, 100%, 98%);
+    margin: auto;
+    padding: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chart h1 {
+    font-size: 24px;
+    color: hsl(25, 47%, 15%);
+}
+
+.chartBox {
+    height: 40vh;
+
+}
+
+
+hr {
+    border: 1px solid hsla(10, 79%, 65%, 0.267);
+    margin-top: 3%;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+    margin-top: 8%;
+    line-height: 1.5;
+}
+
+.amount {
+    align-self: flex-end;
+}
+
+.amount h2 {
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.amount p {
+    font-size: 31px;
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+
+.percentage {
+    align-self: flex-end;
+}
+
+.percentage p:first-child {
+    display: flex;
+    justify-content: right;
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.percentage p:last-child {
+    color: hsl(28, 10%, 53%);
+    font-size: 16px;
+
+
+}
+
+
+@media (min-width: 768px) {
+    main {
+        width: 70%;
+        margin: 8% auto;
+    }
+}
+
+@media(min-width: 1000px) {
+    main {
+        width: 40%;
+        margin: 5% auto;
+    }
+
+    .money h3 {
+        font-size: 21px;
+    }
+
+    .money p {
+        font-size: 32px;
+    }
+
+    .logo img {
+        width: 115%;
+    }
+
+    .chart h1 {
+        font-size: 32px;
+    }
+
+    .chartBox {
+        height: 30vh;
+    }
+
+    .amount {
+        padding: 0;
+    }
+
+    .amount h2 {
+
+        font-size: 21px;
+
+    }
+
+    .amount p {
+        font-size: 51px;
+    }
+
+    .percentage p:first-child {
+        line-height: .8;
+        font-size: 21px;
+
+    }
+
+    .percentage p:last-child {
+        font-size: 21px;
+
+
+    }
+
+    @media (min-width: 1800px) {
+        main {
+            margin-top: 5%;
+            width: 30%;
+        }
+    }
